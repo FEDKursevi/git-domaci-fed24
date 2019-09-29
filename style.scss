@@ -106,23 +106,46 @@ main {
             width: 80%;
             margin: 0 auto;
 
-            .parentbox{
-                display: inline-block;
-                
-                height: 250px;
-                width: 20%;
-                padding: 15px;
-
+            .parentbox1 {
+                @include box;
+                background-image: url('slike/1.jpg');
                 .childbox{
-                    display: none;
-                    &:hover {
-                        
-                    }
+                    @include childbox;
                 }
-
-                img {
-                    width: 100%;
-                    overflow: hidden;
+            }
+            .parentbox2 {
+                @include box;
+                background-image: url('slike/2.jpg');
+                .childbox{
+                    @include childbox;
+                }
+            }
+            .parentbox3 {
+                @include box;
+                background-image: url('slike/3.jpg');
+                .childbox{
+                    @include childbox;
+                }
+            }
+            .parentbox4 {
+                @include box;
+                background-image: url('slike/4.jpg');
+                .childbox{
+                    @include childbox;
+                }
+            }
+            .parentbox5 {
+                @include box;
+                background-image: url('slike/5.jpg');
+                .childbox{
+                    @include childbox;
+                }
+            }
+            .parentbox6 {
+                @include box;
+                background-image: url('slike/6.jpg');
+                .childbox{
+                    @include childbox;
                 }
             }
         }
@@ -203,11 +226,11 @@ main {
 
                 }
                 input, textarea {
-                    width: 90%;
+                    width: 94%;
                       
                 }
                 #ime {
-                    width: 60%;
+                    width: 64%;
                 }
             }
         }

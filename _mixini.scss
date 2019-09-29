@@ -1,0 +1,19 @@
+@mixin box {
+    display: inline-block;
+    height: 300px;
+    width: 20%;
+    margin: 50px 20px 20px 0;
+    padding: 0;
+    background-size: cover;
+}      
+
+@mixin childbox {
+    height: 100px;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(252, 248, 248, 0.692);
+    opacity: 0;
+        &:hover {   
+            opacity: 1;
+        }
+}

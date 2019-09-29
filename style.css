@@ -73,16 +73,102 @@ main .slike {
   main .slike .mainbox {
     width: 80%;
     margin: 0 auto; }
-    main .slike .mainbox .parentbox {
+    main .slike .mainbox .parentbox1 {
       display: inline-block;
-      height: 250px;
+      height: 300px;
       width: 20%;
-      padding: 15px; }
-      main .slike .mainbox .parentbox .childbox {
-        display: none; }
-      main .slike .mainbox .parentbox img {
-        width: 100%;
-        overflow: hidden; }
+      margin: 50px 20px 20px 0;
+      padding: 0;
+      background-size: cover;
+      background-image: url("slike/1.jpg"); }
+      main .slike .mainbox .parentbox1 .childbox {
+        height: 100px;
+        margin: 0;
+        padding: 10px;
+        background-color: rgba(252, 248, 248, 0.692);
+        opacity: 0; }
+        main .slike .mainbox .parentbox1 .childbox:hover {
+          opacity: 1; }
+    main .slike .mainbox .parentbox2 {
+      display: inline-block;
+      height: 300px;
+      width: 20%;
+      margin: 50px 20px 20px 0;
+      padding: 0;
+      background-size: cover;
+      background-image: url("slike/2.jpg"); }
+      main .slike .mainbox .parentbox2 .childbox {
+        height: 100px;
+        margin: 0;
+        padding: 10px;
+        background-color: rgba(252, 248, 248, 0.692);
+        opacity: 0; }
+        main .slike .mainbox .parentbox2 .childbox:hover {
+          opacity: 1; }
+    main .slike .mainbox .parentbox3 {
+      display: inline-block;
+      height: 300px;
+      width: 20%;
+      margin: 50px 20px 20px 0;
+      padding: 0;
+      background-size: cover;
+      background-image: url("slike/3.jpg"); }
+      main .slike .mainbox .parentbox3 .childbox {
+        height: 100px;
+        margin: 0;
+        padding: 10px;
+        background-color: rgba(252, 248, 248, 0.692);
+        opacity: 0; }
+        main .slike .mainbox .parentbox3 .childbox:hover {
+          opacity: 1; }
+    main .slike .mainbox .parentbox4 {
+      display: inline-block;
+      height: 300px;
+      width: 20%;
+      margin: 50px 20px 20px 0;
+      padding: 0;
+      background-size: cover;
+      background-image: url("slike/4.jpg"); }
+      main .slike .mainbox .parentbox4 .childbox {
+        height: 100px;
+        margin: 0;
+        padding: 10px;
+        background-color: rgba(252, 248, 248, 0.692);
+        opacity: 0; }
+        main .slike .mainbox .parentbox4 .childbox:hover {
+          opacity: 1; }
+    main .slike .mainbox .parentbox5 {
+      display: inline-block;
+      height: 300px;
+      width: 20%;
+      margin: 50px 20px 20px 0;
+      padding: 0;
+      background-size: cover;
+      background-image: url("slike/5.jpg"); }
+      main .slike .mainbox .parentbox5 .childbox {
+        height: 100px;
+        margin: 0;
+        padding: 10px;
+        background-color: rgba(252, 248, 248, 0.692);
+        opacity: 0; }
+        main .slike .mainbox .parentbox5 .childbox:hover {
+          opacity: 1; }
+    main .slike .mainbox .parentbox6 {
+      display: inline-block;
+      height: 300px;
+      width: 20%;
+      margin: 50px 20px 20px 0;
+      padding: 0;
+      background-size: cover;
+      background-image: url("slike/6.jpg"); }
+      main .slike .mainbox .parentbox6 .childbox {
+        height: 100px;
+        margin: 0;
+        padding: 10px;
+        background-color: rgba(252, 248, 248, 0.692);
+        opacity: 0; }
+        main .slike .mainbox .parentbox6 .childbox:hover {
+          opacity: 1; }
 main .pricing {
   text-align: center;
   color: #797979; }
@@ -137,9 +223,9 @@ main .contactus {
       main .contactus .forma form select {
         width: 25%; }
       main .contactus .forma form input, main .contactus .forma form textarea {
-        width: 90%; }
+        width: 94%; }
       main .contactus .forma form #ime {
-        width: 60%; }
+        width: 64%; }
 
 footer {
   background-color: #374249; }
