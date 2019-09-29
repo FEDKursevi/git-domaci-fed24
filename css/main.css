@@ -13,6 +13,15 @@ h3 {
   font-size: 25px;
 }
 
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 700 bold;
+  color: #374249;
+  padding-bottom: 50px;
+}
+
 h5 {
   color: #fff;
   font-size: 20px;
@@ -126,7 +135,6 @@ body {
 .estate .estate-img {
   position: relative;
   margin-bottom: 30px;
-  transition: all 0.2s;
 }
 .estate .estate-img:hover .estate-hover {
   display: block;
@@ -154,6 +162,28 @@ body {
 }
 .estate .estate-img .estate-hover h3 {
   padding: 15px;
+}
+
+.pricing {
+  width: 100%;
+  background-color: #fff;
+  padding: 40px;
+}
+.pricing .pricing-titles, .pricing .button {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+.pricing .pricing-titles p, .pricing .button p {
+  font-family: "Roboto", sans-serif;
+  color: #797979;
+}
+.pricing .tabels {
+  display: none;
+}
+.pricing .button {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 650px) {
@@ -191,6 +221,28 @@ body {
     padding: 0 40px;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .estate {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .estate .estate-img {
+    width: 300px;
+  }
+  .estate .estate-img .img-overflow {
+    height: 250px;
+    overflow: hidden;
+  }
+  .estate .estate-img img {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+  }
+  .estate .estate-img .estate-hover {
+    width: 300px;
   }
 }
 
