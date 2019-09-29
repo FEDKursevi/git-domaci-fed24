@@ -1,0 +1,27 @@
+$Roboto: 'Roboto', sans-serif;
+
+
+h1, h6 {
+    font-family: $Roboto;
+    color: #fff;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: $Roboto;
+    font-size: 25px;
+}
+
+h5 {
+    color: #fff;
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 300;
+}
