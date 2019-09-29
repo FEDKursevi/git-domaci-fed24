@@ -1,7 +1,155 @@
 * {
   font-family: 'Roboto', sans-serif; }
 
-table, tr, td {
-  border: 1px solid black; }
+body {
+  margin: 0; }
+
+header {
+  background-color: #374249; }
+  header div {
+    display: inline-block;
+    background-color: #f75311;
+    width: 25%;
+    margin: 0; }
+    header div img {
+      float: left;
+      margin: 10px 0 0 5px;
+      height: 2em; }
+    header div p {
+      display: inline-block;
+      color: white; }
+  header nav {
+    display: inline-block;
+    width: 70%; }
+    header nav ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+      header nav ul li {
+        display: inline-block;
+        padding: 0 40px; }
+        header nav ul li a {
+          font-size: 0.9em;
+          color: white;
+          text-decoration: none; }
+          header nav ul li a:hover {
+            text-decoration: underline; }
+
+main .prva .intro {
+  position: relative;
+  height: 600px;
+  margin: 0;
+  background-image: url("slike/intro.jpg");
+  background-size: cover; }
+  main .prva .intro .slogan {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgba(71, 69, 69, 0.5);
+    text-align: center; }
+    main .prva .intro .slogan h1, main .prva .intro .slogan p {
+      margin: 0;
+      color: white; }
+    main .prva .intro .slogan p {
+      font-size: 0.8em; }
+main .prva .lista {
+  text-align: right; }
+  main .prva .lista ul {
+    list-style-type: none; }
+    main .prva .lista ul li {
+      color: #797979;
+      display: inline-block;
+      padding: 10px 30px;
+      margin: 0 20px;
+      border: 1px solid #cfd1d3;
+      border-radius: 50px; }
+      main .prva .lista ul li:hover {
+        background-color: #cfd1d3;
+        color: white; }
+main .slike {
+  background-color: #f2f3f3; }
+  main .slike .mainbox {
+    width: 80%;
+    margin: 0 auto; }
+    main .slike .mainbox .parentbox {
+      display: inline-block;
+      height: 250px;
+      width: 20%;
+      padding: 15px; }
+      main .slike .mainbox .parentbox .childbox {
+        display: none; }
+      main .slike .mainbox .parentbox img {
+        width: 100%;
+        overflow: hidden; }
+main .pricing {
+  text-align: center;
+  color: #797979; }
+  main .pricing table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 auto; }
+    main .pricing table .bord {
+      border: 1px solid #797979; }
+    main .pricing table td {
+      padding: 5px;
+      width: 100px; }
+    main .pricing table .orangetd {
+      background-color: #f75311;
+      color: white; }
+    main .pricing table .greytd {
+      background-color: #374249;
+      color: white; }
+main .contactus {
+  margin-top: 30px;
+  background-color: #f2f3f3; }
+  main .contactus h2 {
+    margin-top: 30px;
+    padding-top: 30px;
+    text-align: center;
+    color: #797979; }
+  main .contactus .mapouter {
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    height: 200px;
+    width: 40%; }
+  main .contactus .gmap_canvas {
+    margin: 0 auto;
+    overflow: hidden;
+    background: none !important;
+    height: 200px;
+    width: 300px; }
+  main .contactus .forma {
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+    height: 300px; }
+    main .contactus .forma form {
+      background-color: #f75311; }
+      main .contactus .forma form select, main .contactus .forma form input, main .contactus .forma form textarea {
+        display: inline-block;
+        border-style: none;
+        padding: 3px;
+        margin: 15px;
+        box-sizing: border-box; }
+      main .contactus .forma form select {
+        width: 25%; }
+      main .contactus .forma form input, main .contactus .forma form textarea {
+        width: 90%; }
+      main .contactus .forma form #ime {
+        width: 60%; }
+
+footer {
+  background-color: #374249; }
+  footer p {
+    display: inline-block;
+    width: 45%;
+    color: white;
+    text-align: right; }
+  footer .orange {
+    color: #f75311;
+    text-align: left; }
 
 /*# sourceMappingURL=style.css.map */

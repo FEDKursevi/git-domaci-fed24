@@ -12,7 +12,7 @@
     <header>
         <div>
             <img src="slike/location.png">
-            <p><a>New York</a></p>
+            <p><u>New York</u></p>
         </div>
         <nav>
             <ul>
@@ -25,12 +25,14 @@
     </header>
 
     <main>
-        <section class="intro">
-            <div>
-                <h1>Welcome to HomeExchange</h1>
-                <p>Your fastest way to find or sell home online</p>
+        <section class="prva">
+            <div class="intro">
+                <div class="slogan">
+                    <h1>Welcome to HomeExchange</h1>
+                    <p>Your fastest way to find or sell home online</p>
+                </div>
             </div>
-            <div>
+            <div class="lista">
                 <ul>
                     <li><a>$1,200-$4,000</a></li>
                     <li><a>1+Bedroom</a></li>
@@ -40,12 +42,59 @@
         </section>
 
         <section class="slike">
-            <img src="slike/1.jpg"/>
-            <img src="slike/2.jpg"/>
-            <img src="slike/3.jpg"/>
-            <img src="slike/4.jpg"/>
-            <img src="slike/5.jpg"/>
-            <img src="slike/6.jpg"/>
+            <div class="mainbox">
+                <div class="parentbox"> 
+                    <div class="childbox">
+                        <h3> LoftApartment</h3>
+                        <p>$3,000</p>
+                    </div>
+                    <img src="slike/1.jpg"/>
+                </div>
+
+                    <div class="parentbox">
+                        <div class="childbox">
+                            <h3> LoftApartment</h3>
+                            <p>$3,000</p>
+                        </div>
+                        <img src="slike/2.jpg" />
+                    </div>
+                
+                    
+                        <div class="parentbox">
+                            <div class="childbox">
+                                <h3> LoftApartment</h3>
+                                <p>$3,000</p>
+                            </div>
+                            <img src="slike/3.jpg" />
+                        </div>
+                
+                        
+                            <div class="parentbox">
+                                <div class="childbox">
+                                    <h3> LoftApartment</h3>
+                                    <p>$3,000</p>
+                                </div>
+                                <img src="slike/4.jpg" />
+                            </div>
+                
+                           
+                                <div class="parentbox">
+                                    <div class="childbox">
+                                        <h3> LoftApartment</h3>
+                                        <p>$3,000</p>
+                                    </div>
+                                    <img src="slike/5.jpg" />
+                                </div>
+                
+                                
+                                    <div class="parentbox">
+                                        <div class="childbox">
+                                            <h3> LoftApartment</h3>
+                                            <p>$3,000</p>
+                                        </div>
+                                        <img src="slike/6.jpg" />
+                                    </div>
+            </div>
         </section>
 
         <section class="pricing">
@@ -57,7 +106,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td colspan="3">Price</td>
+                    <td class="orangetd" colspan="3">Price</td>
                     <!-- <td></td> 
                     <td></td> -->
                 </tr>
@@ -66,52 +115,53 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td colspan="2">Rent/Buy</td>
+                    <td colspan="2" class="greytd bord">Rent/Buy</td>
                     <!-- <td></td> -->
-                    <td>Sell</td>
+                    <td class="greytd bord">Sell</td>
                 </tr>
                 <tr>
-                    <td rowspan="3" colspan="2">Location</td>
+                    <td rowspan="3" colspan="2" class="orangetd bord">Location</td>
                     <!-- <td></td> 
                     <td></td> -->
-                    <td colspan="2">Downtown</td> 
+                    <td colspan="2" class="greytd bord">Downtown</td> 
                     <!-- <td></td> -->
-                    <td colspan="2">3$</td>
-                    <td colspan="2">3$</td>
+                    <td colspan="2" class="bord">3$</td>
+                    <td colspan="2" class="bord">3$</td>
                 </tr>
                 <tr>
                     <!-- <td></td>
                     <td></td> 
                     <td></td> -->
-                    <td colspan="2">Center</td>
+                    <td colspan="2" class="greytd bord">Center</td>
                     <!-- <td></td> -->
-                    <td colspan="2">3$</td>
-                    <td colspan="2">3$</td>
+                    <td colspan="2" class="bord">3$</td>
+                    <td colspan="2" class="bord">3$</td>
                 </tr>
                 <tr>
                     <!-- <td></td>
                     <td></td> 
                     <td></td> -->
-                    <td colspan="2">Manhattan</td>
+                    <td colspan="2" class="greytd bord">Manhattan</td>
                     <!-- <td></td> -->
-                    <td colspan="2">3$</td>
-                    <td colspan="2">3$</td>
+                    <td colspan="2" class="bord">3$</td>
+                    <td colspan="2" class="bord">3$</td>
                 </tr>
             </table>
         </section>
         <section class="contactus">
-            <div class="map">
-
-            </div>
-            <div class="forma">
-
-            </div>
+            <h2>CONTACT US</h2>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=manhatten&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                            scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://usave.co.uk">usave</a></div>    
+                </div>
+            
             <div class="forma">
                 <form method="POST" action="#">
                     <select>
                         <option value="mrs">Mrs</option>
                         <option value="ms">Ms</option>
-                        <input type="text" name="ime" placeholder="Your name"><br>
+                        <input id="ime" type="text" name="ime" placeholder="Your name"><br>
                         <input type="email" name="mail" placeholder="Your email">
                         <textarea placeholder="Your message" rows="2"></textarea>
                     </select>
@@ -124,7 +174,7 @@
 
     <footer>
         <span>
-            <p>Copyright 2016</p><p>HomeExchange</p>
+            <p>Copyright 2016</p><p class="orange">HomeExchange</p>
         </span>
     </footer>
     

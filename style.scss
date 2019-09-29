@@ -5,6 +5,226 @@
     font-family: 'Roboto', sans-serif;
 }
 
-table, tr, td {
-    border: 1px solid black;
+// table, tr, td {
+//     border: 1px solid black;
+// }
+
+body {
+    margin: 0;
 }
+
+header {
+    background-color: $header_footer;
+    div {
+        display: inline-block;
+        background-color: $narandzasta;
+        width: 25%;
+        margin: 0;
+        img {
+            float: left;
+            margin: 10px 0 0 5px;
+            height: 2em;
+        }
+        p {
+            display: inline-block;
+            color: white;
+        }
+    }
+    nav {
+        display: inline-block;
+        width: 70%;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            li {
+                display: inline-block;
+                padding: 0 40px ;
+                a {
+                    font-size: 0.9em;
+                    color: white;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+main {
+    .prva{
+        
+        .intro {
+            position: relative;
+            height: 600px;
+            margin: 0;
+            background-image: url('slike/intro.jpg');
+            background-size: cover;
+            .slogan {
+                position: absolute;
+                top: 70%;
+                left: 15%;
+                width: 70%;
+                margin: 0 auto;
+                background-color: rgba(71, 69, 69, 0.5);
+                text-align: center;
+                h1, p {
+                    margin: 0;
+                    color: white;
+                }
+                p {
+                    font-size: 0.8em;
+                }
+            }
+            
+        }
+        .lista {
+            text-align: right;
+            ul {
+                list-style-type: none;
+                li {
+                    color: $boja_fonta;
+                    display: inline-block;
+                    padding: 10px 30px;
+                    margin: 0 20px;
+                    border: 1px solid $hover_na_dugmice;
+                    border-radius: 50px;
+                    &:hover {
+                        background-color: $hover_na_dugmice;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .slike {
+        background-color: $pozadina_sekcija;
+        .mainbox {
+            width: 80%;
+            margin: 0 auto;
+
+            .parentbox{
+                display: inline-block;
+                
+                height: 250px;
+                width: 20%;
+                padding: 15px;
+
+                .childbox{
+                    display: none;
+                    &:hover {
+                        
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    overflow: hidden;
+                }
+            }
+        }
+        
+    }
+    .pricing {
+        text-align: center;
+        color: $boja_fonta;
+        table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                margin: 0 auto;
+
+            .bord {
+                border: 1px solid $boja_fonta;
+            }
+            td {
+                padding: 5px;
+                width: 100px;
+                
+            }
+            .orangetd {
+                background-color: $narandzasta;
+                color: white;
+            }
+            .greytd {
+                background-color: $header_footer;
+                color: white;
+            }
+        }
+    }
+
+    .contactus {
+        margin-top: 30px;
+        background-color: $pozadina_sekcija;
+        
+            h2 {
+                margin-top: 30px;
+                padding-top: 30px;
+                text-align: center;
+                color: $boja_fonta;
+            }
+            .mapouter {
+               display: inline-block;
+               vertical-align: top;
+                text-align: right;
+                height: 200px;
+                width: 40%;
+                
+            }
+    
+            .gmap_canvas {
+                margin: 0 auto;
+                overflow: hidden;
+                background: none !important;
+                height: 200px;
+                width: 300px;
+            }
+        
+        .forma {
+            vertical-align: top;
+            display: inline-block;
+            width: 50%;
+            height: 300px;
+            form {
+                background-color: $narandzasta;
+                
+
+                select, input, textarea {
+                    display: inline-block;
+                    border-style: none;
+                    padding: 3px;
+                    margin: 15px;
+                    box-sizing: border-box;
+                }
+                select {
+                    width : 25%;
+
+                }
+                input, textarea {
+                    width: 90%;
+                      
+                }
+                #ime {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $header_footer;
+        p{
+            display: inline-block;
+            width: 45%;
+            color: white;
+            text-align: right;
+        }
+        .orange {
+            color: $narandzasta;
+            text-align: left;
+        }
+}
+    
