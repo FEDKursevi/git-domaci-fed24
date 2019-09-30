@@ -154,6 +154,9 @@ main {
     .pricing {
         text-align: center;
         color: $boja_fonta;
+        #hidden {
+            display: none;
+        }
         table {
                 border-collapse: collapse;
                 border-spacing: 0;
@@ -250,4 +253,188 @@ footer {
             text-align: left;
         }
 }
+   
+@media only screen and (min-width: 700px) and (max-width: 1100px) {
+    header {
+        div {
+            width: 18%;
+        }
+        nav {
+            width: 60%;
+            ul {
+                li {
+                    padding: 0 30px;
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+    main {
+        .prva {
+            .intro {
+                height: 500px;
+                .slogan {
+                    top: 50%;
+                    height: 100px;
+                    h1 {
+                        width: 80%;
+                        font-size: 2.2em;
+                        margin: 0 auto;
+                    }
+                }
+                
+            }
+            .lista {
+                ul {
+                    padding: 0 20px 0 20px;
+                }
+            }
+        }
+
+        .slike {
+            padding: 20px;
+            .mainbox {
+                text-align: center;
+                .parentbox1, .parentbox2, .parentbox3, .parentbox4, .parentbox5, .parentbox6 {
+                    width: 40%;
+                    height: 250px;
+                    margin: 10px 10px 10px 0;
+                }
     
+            }
+    
+        }
+        #hidden {
+            display: none;
+        }
+
+        .contactus {
+            height: 500px;
+            .mapouter {
+                display: block;
+                margin: 15px auto;
+            }
+            .forma {
+                display: block;
+                width: 80%;
+                margin: 0 auto;
+                height: 200px;
+            }
+        }
+    }
+    footer {
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    
+    header {
+        div {
+            width: 100%;
+        }
+        nav {
+            display: block;
+            height: 170px;
+            margin: 0 auto;
+            ul {
+                text-align: center;
+                height: 100%;
+                width: 80%;
+                margin: 0 auto;
+                li {
+                    padding: 10px 40px;
+                    
+                }
+            }
+        }
+    }
+    main {
+        .prva {
+            
+            .intro {
+                background-image: none;
+                height: 150px;
+                .slogan {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: black;
+                    h1 {
+                        width: 90%;
+                        padding: 20px 10px;
+                        font-size: 1.7em;
+                    }
+                }
+            }
+            .lista {
+                
+                ul {
+                    text-align: center;
+                    width: 100%;
+                    padding: 05px;
+                    margin: 0;
+                    li {
+                        font-size: 0.8em;
+                        padding: 10px;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+
+        .slike {
+            .mainbox {
+                width: 100%;
+                .parentbox1, .parentbox2, .parentbox3, .parentbox4, .parentbox5, .parentbox6 {
+                    display: block;
+                    width: 100%;
+                    height: 200px;
+                    .childbox {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        
+        .pricing {
+            #hidden {
+                display: block;
+                border: 1px solid $hover_na_dugmice;
+                padding: 5px;
+                border-radius: 15px;
+                width: 150px;
+                margin: 0 auto;
+                &:hover {
+                    background-color: $hover_na_dugmice;
+                    color: white;
+                }
+            }
+
+            table {
+
+                display: none;
+            }
+        }
+        .contactus {
+            
+            .mapouter {
+                display: block;
+                margin: 15px auto;
+                width: 100%;
+            }
+            .forma {
+                width: 90%;
+                margin: 0 auto;
+                display: block;
+                form { 
+                    select, input, #ime, textarea {
+                    width: 90%;
+                }}
+                
+            }
+        }
+    }
+}
