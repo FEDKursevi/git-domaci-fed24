@@ -8,3 +8,357 @@
     font-family: $font-main;
 }
 
+.mainNavigation{
+    width: 100%;
+    background-color: $color-header-background;
+    
+
+    .location{
+        float: left;
+        background-color: $color-location;
+        width: 20%;
+        height: 100%;
+        padding: 1em;
+        
+        a{
+            color: white;
+        }
+    }
+
+    ul{
+        width: 80%;
+        
+        li{
+            display: inline-block;
+            text-align: center;
+            padding: 1em 0.5em;
+            margin: 0 1em;
+
+            a{
+                color: white;
+                text-decoration: none;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+    }
+}
+
+.intro{
+    position: relative;
+
+    .jumbo{
+        width: 100%;
+    }
+
+    .float{
+        width: 80%;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        background: fade-out($color: $color-header-background, $amount: 0.4);
+        color: white;
+        padding: 0.5em;
+
+        h1{
+            font-size: 30px;
+            font-weight: initial;
+            
+        }
+    }
+}
+
+.filter{
+    padding: 1em;
+    text-align: right;
+
+    button{
+        @include buttons;
+    }
+}
+
+.ponuda{
+    background-color: $color-section-background;
+    padding: 1em 5em;
+
+    .slika{
+        display: inline-block;
+        position: relative;
+        margin: 1em;
+        
+        img{
+            height: 20em;
+        }
+
+        .overlay{
+            position: absolute;
+            top: 0;
+            height: 40%;
+            width: 100%;
+            color: black;
+            background: fade-out($color: white, $amount: 0.5);
+            opacity: 0;
+            text-align: center;
+            font-weight: bold;
+            padding: 25% 0;
+            padding-left: 5%;
+
+        }
+
+        &:hover .overlay{
+            opacity: 1;
+        }
+    }
+}
+
+.pricing{
+    text-align: center;
+    padding: 2em;
+
+    h2{
+        color: $color-headings;
+        margin-bottom: 1em;
+    }
+
+    p{
+        color: $color-font;
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+    }
+
+    button{
+        display: none;
+    }
+
+    table{ 
+        width: 50%;
+        margin: 1em auto;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 3px;
+
+        .nevidljivi{
+            border: none;
+            background-color: white;
+        }
+
+        td, th{
+            width: 14%;
+            border: 1px solid $color-font;
+            padding: 5px;
+        }
+
+        th{
+            color: white;
+            background-color: $color-headings;
+        }
+
+        .narandzasti{
+            background-color: $color-location;
+        }
+    }
+
+}
+
+.contact{
+    position: relative;
+    background-color: $color-section-background;
+
+    h2{ 
+        text-align: center;
+        color: $color-headings;
+        padding: 1em;
+    }
+
+    .map{
+        display: inline-block;
+        position: relative;
+        left: 5em;
+        margin-bottom: 2em;
+    }
+
+    form{
+        position: absolute;
+        right: 5em;
+        display: inline-block;
+        background-color: $color-location;
+        width: 50%;
+        margin: 1em 0;
+        padding: 0.5em;
+
+        select{
+            width: 20%;
+            margin: 1em;
+            padding: 0.5em;
+        }
+
+        .ime{
+            display: inline-block;
+            width: 70%;
+            margin: 1em;
+            padding: 0.5em;
+        }
+
+        .email{
+            display: inline-block;
+            width: 95%;
+            margin: 1em;
+            padding: 0.5em;
+        }
+
+        textarea{
+            width: 95%;
+            margin: 1em;
+            padding: 0.5em;
+        }
+    }
+}
+
+footer{
+    background-color: $color-header-background;
+    color: white;
+    padding: 1em;
+    text-align: center;
+
+    p{
+        display: inline-block;
+        color: $color-location;
+    }
+}
+
+@media only screen and ( max-width:1024px){
+    .filter{
+        padding-right: 5em;
+    }
+
+    .ponuda{
+        text-align: center;
+
+        .slika, img{
+            height: 15em;
+            width: 15em;
+            overflow: hidden;
+        }
+    }
+
+    .pricing{
+        
+        table{
+            width: 80%;
+        }
+    }
+
+    .contact{
+        position: static;
+        text-align: center;
+        padding-bottom: 3em;
+
+        .map{
+            position: static;
+            display: block;
+            margin: 0 auto 2em;
+            width: 40%;
+        }
+
+        form{
+            position: static;
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and (max-width:640px){
+
+    .mainNavigation{
+        float: initial;
+
+        .location{
+            width: 100%;
+            float: initial;
+        }
+
+        ul{
+            width: 100%;
+            text-align: center;
+
+            li{
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+
+    .intro{
+        .float{
+            width: 90%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+    .filter{
+        text-align: center;
+        padding: 1em 0.5em;
+
+        button{
+            margin: 0 0.5em;
+        }
+    }
+
+    .ponuda{
+
+        padding: 1em 0;
+
+        .slika{
+            width: 90%;
+            overflow: hidden;
+
+            .overlay{
+                opacity: 1;
+                height: 30%;
+                text-align: left;
+                padding: 7% 5%;
+                
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .pricing{
+
+        table{
+            display: none;
+        }
+
+        button{
+            display: block;
+            @include buttons;
+            margin: 0 auto;
+        }
+    }
+
+    .contact{
+        .map{
+            width: 80%;
+        }
+
+        form{
+            width: 90%;
+
+            select, .ime{
+                width: 95%;
+            }
+        }
+    }
+}

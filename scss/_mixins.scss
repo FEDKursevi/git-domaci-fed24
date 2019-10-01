@@ -3,3 +3,19 @@
 	  	   -moz-box-sizing: border-box;
 	  			box-sizing: border-box;
 }
+
+@mixin buttons {
+	border-radius: 20px;
+	height: 80%;
+	background-color: white;
+	padding: 10px;
+	border: 1px solid $color-font;
+	color: $color-font;
+	margin: 0.5em 1em;
+	
+	&:hover{
+		background-color: $color-buttons-hover;
+		color: white;
+		border-color: white;
+	}
+}
