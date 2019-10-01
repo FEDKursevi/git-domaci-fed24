@@ -1,0 +1,381 @@
+
+@import "variable";
+@import "mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+    background-color: $colorhf;
+    color: white;
+    div {
+        display: inline-block;
+        background-color: $color;
+        width: 20%;
+        position: relative;
+        img {
+            position: absolute;
+            top: 10px;
+            left: 40px;
+            display: inline-block;
+            width: 50px;
+            height:50px;
+            
+        }
+        h3 {
+            display: inline-block;
+            font-size: 20px;
+            padding: 20px 5px;
+            margin-left: 80px;
+            text-decoration: underline;
+            font-weight: 300;
+        }
+    }
+}
+nav {
+    display: inline-block;
+    ul {
+        list-style-type: none;
+        a {
+            text-decoration: none;
+            li {
+                display: inline-block;
+                padding: 15px;
+                margin-right: 20px;
+                color: white;
+                font-size: 15px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.pozadina {
+    width: 100%;
+    height: 500px;
+    background-image: url(../slike/intro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    .tekst {
+        width: 40%;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(61, 61, 61, 0.5);
+        h1 {
+            color: white;
+            text-align: center;
+            font-weight: 500;
+            padding: 5px;
+            font-size: 40px;
+        }
+        h5 {
+            color: white;
+            text-align:center;
+            font-size: 16px;
+        }
+    }
+}
+.dugmici {
+    width: 85%;
+    text-align: end;
+    input {
+        background-color: white;
+        color: $fontcol;
+        border-radius: 50px;
+        border: $fontcol 0.1px solid;
+        display: inline-block;
+        margin: 10px;
+        padding: 12px;
+        &:hover {
+            cursor: pointer;
+            background-color: $hover;
+            color: white;
+        }
+    }
+}
+
+.slike {
+    background-color: $pozadina;
+    padding: 30px 300px;
+    margin: 0 auto;
+
+    @for $i from 1 through 6 {
+		.product#{$i} {
+            background-image: url("../slike/#{$i}.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        background-position: 50% 50%;
+        }
+    }
+
+    section {
+        width: 300px;
+        height: 350px;
+        margin: 5px;
+        display: inline-block;
+        div {
+            background-color: rgb(250, 250, 250, 0.5);
+            font-size: 18px;
+            padding: 15px;
+            visibility: hidden;
+            
+        }
+    }
+    section:hover div {
+            visibility: unset;
+        
+    }
+}
+.pricing {
+    text-align: center;
+    input {
+        display: none;
+    }
+    h1 {
+        color: $h;
+        padding: 30px;
+        font-weight: bold;
+    }
+    h5 {
+        color: $h;
+        padding: 5px;
+    }
+    table {
+        width: 45%;
+        margin: 25px auto;
+        text-align: center;
+        border-spacing:0;
+        border-collapse: collapse; 
+        th, td {
+            padding: 10px;
+            border: 0.5px solid $fontcol;
+        }
+        th {
+            font-weight: bold;
+        }
+        td.hidden {
+           border: none;
+           
+        }
+    }
+}
+.grey {
+    background-color: $h;
+    color: white;
+}
+.orange {
+    background-color: $color;
+    color: white;
+}
+.contact {
+    background-color: $pozadina;
+    padding: 0px 300px 30px 300px;
+    
+    h1 {
+        font-weight: bold;
+        padding: 30px;
+        text-align: center;
+        color: $h;
+    }
+    .map {
+       display: inline-block;
+       padding-right:50px;
+    }
+    form {
+        width: 50%;
+        padding: 20px;
+        display: inline-block;
+        vertical-align: top;
+        input {
+            display:block;
+            border: none;
+            color: $fontcol;
+            padding: 5px;
+        }
+        select {
+            border: none;
+            display: inline-block;
+            width: 20%;
+            margin-right: 30px;
+            padding: 5px;
+        }
+        #ime {
+            display: inline-block;
+            width: 74%;
+            box-sizing: border-box;
+        }
+        #email {
+            display: block;
+            margin-top: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        textarea {
+            border: none;
+            display: block;
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+}
+footer {
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    span {
+        color: $color;
+    }
+}
+@include tablet {
+    header {
+        div {
+            width: 40%;
+        }
+    }
+    .slike {
+        padding: 30px 100px;
+        section {
+            width: 280px;
+        }
+        
+    }
+    .pricing {
+        padding: 0;
+        table {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    
+    .contact {
+        padding: 0;
+        .map {
+            width:500px;
+            margin: 10px auto;
+            display:block;
+            padding-left: 20%;
+            iframe {
+                margin: 0 auto;
+            }
+           
+        }
+        form {
+            display: block;
+            width: 80%;
+            margin: 20px auto 30px auto;
+        }
+    }
+   
+
+}
+@include phone {
+    header {
+        div {
+            display: block;
+            width: 100%;
+        }
+    }
+    nav {
+        display: block;
+        ul {
+            a {
+                li {
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .pozadina {
+        position: static;
+        height: auto;
+        background-image: none;
+        .tekst {
+            position: static;
+            transform: none;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            
+        }
+    }
+    .dugmici {
+        text-align: center;
+        margin:auto;
+        width: 100%;
+        input {
+            margin: 10px ;
+        }
+    }
+    .slike {
+        width: 100%;
+        padding: 0;
+        section {
+            display: block;
+            width: 90%;
+            margin: 20px auto;
+            div {
+                visibility: visible;
+            }
+        }
+    }
+    .pricing {
+        table {
+            display: none;       
+            }
+            #dugme {
+                display: block;
+                margin: 15px auto;
+                background-color: white;
+                color: $fontcol;
+                border-radius: 50px;
+                border: $fontcol 0.1px solid;
+                display: inline-block;
+                padding: 12px;
+                &:hover {
+                cursor: pointer;
+                background-color: $hover;
+                color: white;
+                }
+        }
+        
+    }
+    .contact {
+        padding: 0;
+        text-align: center;
+    .map {
+        width: 350px;
+        height: 200px;
+        margin: 0 auto;
+        padding: 0;
+        iframe {
+            margin: 0 auto;
+        }
+    }
+    .inputi {
+        width: 85%;
+        margin: 20px 5px;
+        select {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #ime {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+
+    }
+}
+}

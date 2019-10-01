@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  background-color: #374249;
+  color: white;
+}
+header div {
+  display: inline-block;
+  background-color: #f75311;
+  width: 20%;
+  position: relative;
+}
+header div img {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+header div h3 {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px 5px;
+  margin-left: 80px;
+  text-decoration: underline;
+  font-weight: 300;
+}
+
+nav {
+  display: inline-block;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul a {
+  text-decoration: none;
+}
+nav ul a li {
+  display: inline-block;
+  padding: 15px;
+  margin-right: 20px;
+  color: white;
+  font-size: 15px;
+}
+nav ul a li:hover {
+  text-decoration: underline;
+}
+
+.pozadina {
+  width: 100%;
+  height: 500px;
+  background-image: url(../slike/intro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+}
+.pozadina .tekst {
+  width: 40%;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(61, 61, 61, 0.5);
+}
+.pozadina .tekst h1 {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  padding: 5px;
+  font-size: 40px;
+}
+.pozadina .tekst h5 {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+.dugmici {
+  width: 85%;
+  text-align: end;
+}
+.dugmici input {
+  background-color: white;
+  color: #797979;
+  border-radius: 50px;
+  border: #797979 0.1px solid;
+  display: inline-block;
+  margin: 10px;
+  padding: 12px;
+}
+.dugmici input:hover {
+  cursor: pointer;
+  background-color: #cfd1d3;
+  color: white;
+}
+
+.slike {
+  background-color: #f3f7f9;
+  padding: 30px 300px;
+  margin: 0 auto;
+}
+.slike .product1 {
+  background-image: url("../slike/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.slike .product2 {
+  background-image: url("../slike/2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.slike .product3 {
+  background-image: url("../slike/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.slike .product4 {
+  background-image: url("../slike/4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.slike .product5 {
+  background-image: url("../slike/5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.slike .product6 {
+  background-image: url("../slike/6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.slike section {
+  width: 300px;
+  height: 350px;
+  margin: 5px;
+  display: inline-block;
+}
+.slike section div {
+  background-color: rgba(250, 250, 250, 0.5);
+  font-size: 18px;
+  padding: 15px;
+  visibility: hidden;
+}
+.slike section:hover div {
+  visibility: unset;
+}
+
+.pricing {
+  text-align: center;
+}
+.pricing input {
+  display: none;
+}
+.pricing h1 {
+  color: #374249;
+  padding: 30px;
+  font-weight: bold;
+}
+.pricing h5 {
+  color: #374249;
+  padding: 5px;
+}
+.pricing table {
+  width: 45%;
+  margin: 25px auto;
+  text-align: center;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.pricing table th, .pricing table td {
+  padding: 10px;
+  border: 0.5px solid #797979;
+}
+.pricing table th {
+  font-weight: bold;
+}
+.pricing table td.hidden {
+  border: none;
+}
+
+.grey {
+  background-color: #374249;
+  color: white;
+}
+
+.orange {
+  background-color: #f75311;
+  color: white;
+}
+
+.contact {
+  background-color: #f3f7f9;
+  padding: 0px 300px 30px 300px;
+}
+.contact h1 {
+  font-weight: bold;
+  padding: 30px;
+  text-align: center;
+  color: #374249;
+}
+.contact .map {
+  display: inline-block;
+  padding-right: 50px;
+}
+.contact form {
+  width: 50%;
+  padding: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+.contact form input {
+  display: block;
+  border: none;
+  color: #797979;
+  padding: 5px;
+}
+.contact form select {
+  border: none;
+  display: inline-block;
+  width: 20%;
+  margin-right: 30px;
+  padding: 5px;
+}
+.contact form #ime {
+  display: inline-block;
+  width: 74%;
+  box-sizing: border-box;
+}
+.contact form #email {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contact form textarea {
+  border: none;
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+}
+
+footer {
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+footer span {
+  color: #f75311;
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+  header div {
+    width: 40%;
+  }
+
+  .slike {
+    padding: 30px 100px;
+  }
+  .slike section {
+    width: 280px;
+  }
+
+  .pricing {
+    padding: 0;
+  }
+  .pricing table {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .contact {
+    padding: 0;
+  }
+  .contact .map {
+    width: 500px;
+    margin: 10px auto;
+    display: block;
+    padding-left: 20%;
+  }
+  .contact .map iframe {
+    margin: 0 auto;
+  }
+  .contact form {
+    display: block;
+    width: 80%;
+    margin: 20px auto 30px auto;
+  }
+}
+@media (max-width: 700px) {
+  header div {
+    display: block;
+    width: 100%;
+  }
+
+  nav {
+    display: block;
+  }
+  nav ul a li {
+    display: block;
+    text-align: center;
+  }
+
+  .pozadina {
+    position: static;
+    height: auto;
+    background-image: none;
+  }
+  .pozadina .tekst {
+    position: static;
+    transform: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+
+  .dugmici {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+  .dugmici input {
+    margin: 10px;
+  }
+
+  .slike {
+    width: 100%;
+    padding: 0;
+  }
+  .slike section {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+  }
+  .slike section div {
+    visibility: visible;
+  }
+
+  .pricing table {
+    display: none;
+  }
+  .pricing #dugme {
+    display: block;
+    margin: 15px auto;
+    background-color: white;
+    color: #797979;
+    border-radius: 50px;
+    border: #797979 0.1px solid;
+    display: inline-block;
+    padding: 12px;
+  }
+  .pricing #dugme:hover {
+    cursor: pointer;
+    background-color: #cfd1d3;
+    color: white;
+  }
+
+  .contact {
+    padding: 0;
+    text-align: center;
+  }
+  .contact .map {
+    width: 350px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .contact .map iframe {
+    margin: 0 auto;
+  }
+  .contact .inputi {
+    width: 85%;
+    margin: 20px 5px;
+  }
+  .contact .inputi select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .contact .inputi #ime {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

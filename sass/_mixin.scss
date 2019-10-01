@@ -1,0 +1,20 @@
+
+@mixin li {
+    display: inline-block;
+}
+
+@mixin section {
+    display: inline-block;
+}
+
+@mixin phone {
+    @media (max-width: #{$maxphone-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$maxphone-width}) and (max-width: #{$maxtablet-width}) {
+        @content;
+    }
+}    
