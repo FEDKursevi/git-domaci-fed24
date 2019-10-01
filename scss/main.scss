@@ -188,6 +188,9 @@ body {
         width: 90%;
         margin: 10px auto;
         padding: 7px;
+        font-family: $Roboto;
+    
+        
     }
 
     textarea {
@@ -260,34 +263,141 @@ footer {
             background-color: rgba(0, 0, 0, 0.3);
         }
     }
+
+    .prices {
+
+        .wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: right;
+            padding-right: 50px;
+        }
+    }
+
     .estate {
+        max-width: 700px;
+        margin: 0 auto;
         display: flex;
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         
 
-    .estate-img {
-        width: 300px;
-
-        .img-overflow {
-            height: 250px;
-            overflow: hidden;
-        
-        }
-
-        img {
+        .estate-img {
             width: 300px;
-            height: 300px;
-            padding:  10px;
 
-        }
 
-        .estate-hover {
-            width: 300px;
+            .img-overflow {
+                height: 250px;
+                overflow: hidden;
+            
+            }
+
+            img {
+                width: 300px;
+                height: 300px;
+                padding:  10px;
+
+            }
+
+            .estate-hover {
+                width: 300px;
+            }
         }
     }
 
-}
+    .pricing {
+        margin: 0 auto;
 
+        .pricing-titles, .button {
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+    
+            p {
+                font-family: $Roboto;
+                color: $font-color;
+            }
+        }
+    
+    
+        .tabels {
+            max-width: 600px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto; 
+            margin-top: 50px;
+            padding-right: 10px;
+
+
+            .table {
+                font-family: $Roboto;
+                display: flex;
+
+                th, .devide {
+                    color: #fff;
+                    padding: 10px;
+                }
+
+                th {
+                    min-width: 270px;
+                    background-color: $orange;
+                }
+
+                td {
+                    border: 1px solid $font-color;  
+                }
+
+                .orange-td {
+                    background-color: $orange;
+                }
+
+                .devide {
+                    background-color: $dark-blue;
+                    border: 1px solid $font-color; 
+
+                }
+            }
+            .table2 {
+                float: right;
+            }
+        }
+
+        .button {
+            display: none;
+        }
+    }
+
+    .maps {
+        max-width: 700px;
+        margin: 0 auto;
+
+    }
+
+    .form {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 40px;
+
+        select {
+            width: 15%;
+            display: inline-block;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+            float: left;
+            margin-left: 30px;
+        }
+
+        .first-input {
+            width: 70%;
+            display: inline-block;
+            margin-left: 10px;
+            margin-bottom: 0;
+            float: right;
+            margin-right: 30px;
+        }
+    }
 }

@@ -14,3 +14,11 @@
         border: 1px solid $font-color;
     }
 }
+
+.clearfix {
+    clear: both;
+}
+
+.hidden {
+    opacity: 0;
+}

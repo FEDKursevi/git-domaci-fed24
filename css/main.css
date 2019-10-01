@@ -48,6 +48,14 @@ h6 {
   border: 1px solid #797979;
 }
 
+.clearfix {
+  clear: both;
+}
+
+.hidden {
+  opacity: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -208,6 +216,7 @@ body {
   width: 90%;
   margin: 10px auto;
   padding: 7px;
+  font-family: "Roboto", sans-serif;
 }
 .form textarea {
   height: 100px;
@@ -270,7 +279,16 @@ footer a:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
 
+  .prices .wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: right;
+    padding-right: 50px;
+  }
+
   .estate {
+    max-width: 700px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -290,6 +308,85 @@ footer a:hover {
   }
   .estate .estate-img .estate-hover {
     width: 300px;
+  }
+
+  .pricing {
+    margin: 0 auto;
+  }
+  .pricing .pricing-titles, .pricing .button {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .pricing .pricing-titles p, .pricing .button p {
+    font-family: "Roboto", sans-serif;
+    color: #797979;
+  }
+  .pricing .tabels {
+    max-width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-right: 10px;
+  }
+  .pricing .tabels .table {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+  }
+  .pricing .tabels .table th, .pricing .tabels .table .devide {
+    color: #fff;
+    padding: 10px;
+  }
+  .pricing .tabels .table th {
+    min-width: 270px;
+    background-color: #f75311;
+  }
+  .pricing .tabels .table td {
+    border: 1px solid #797979;
+  }
+  .pricing .tabels .table .orange-td {
+    background-color: #f75311;
+  }
+  .pricing .tabels .table .devide {
+    background-color: #374249;
+    border: 1px solid #797979;
+  }
+  .pricing .tabels .table2 {
+    float: right;
+  }
+  .pricing .button {
+    display: none;
+  }
+
+  .maps {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .form {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .form select {
+    width: 15%;
+    display: inline-block;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    float: left;
+    margin-left: 30px;
+  }
+  .form .first-input {
+    width: 70%;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 0;
+    float: right;
+    margin-right: 30px;
   }
 }
 
