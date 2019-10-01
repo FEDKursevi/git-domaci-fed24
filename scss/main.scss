@@ -279,9 +279,9 @@ footer {
         margin: 0 auto;
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
-        
 
         .estate-img {
             width: 300px;
@@ -399,5 +399,82 @@ footer {
             float: right;
             margin-right: 30px;
         }
+    }
+}
+
+
+@media only screen and (min-width:1300px) {
+
+    .prices {
+        .wrapper {
+            max-width: 1200px;
+        }
+    }
+
+
+    .estate {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .estate-img {
+            min-width: 300px;
+
+
+            .img-overflow {
+                height: 100%;            
+            }
+
+            img {
+                width: 300px;
+                height: 100%;
+                padding:  10px;
+
+            }
+        }
+    }
+
+    .tabels {
+        min-width: 900px;
+
+        .table {
+            th {
+                min-width: 370px;
+                background-color: $orange;
+            }
+
+            td {
+                min-width: 200px;
+                border: 1px solid $font-color;  
+            }
+
+            .orange-td {
+                background-color: $orange;
+            }
+
+            .devide {
+                background-color: $dark-blue;
+                border: 1px solid $font-color; 
+
+            }
+        }
+        .table2 {
+            float: right;
+        }
+    }
+
+
+
+    .maps-form {
+        max-width: 1300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-right: 50px;
     }
 }

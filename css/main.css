@@ -291,6 +291,7 @@ footer a:hover {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -387,6 +388,63 @@ footer a:hover {
     margin-bottom: 0;
     float: right;
     margin-right: 30px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .prices .wrapper {
+    max-width: 1200px;
+  }
+
+  .estate {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .estate .estate-img {
+    min-width: 300px;
+  }
+  .estate .estate-img .img-overflow {
+    height: 100%;
+  }
+  .estate .estate-img img {
+    width: 300px;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .tabels {
+    min-width: 900px;
+  }
+  .tabels .table th {
+    min-width: 370px;
+    background-color: #f75311;
+  }
+  .tabels .table td {
+    min-width: 200px;
+    border: 1px solid #797979;
+  }
+  .tabels .table .orange-td {
+    background-color: #f75311;
+  }
+  .tabels .table .devide {
+    background-color: #374249;
+    border: 1px solid #797979;
+  }
+  .tabels .table2 {
+    float: right;
+  }
+
+  .maps-form {
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-right: 50px;
   }
 }
 
